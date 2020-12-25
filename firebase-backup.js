@@ -54,5 +54,9 @@ if (require.main === module) {
 
         exit(0)
     }
+    var dir = args.downloadfolder;
+    if (!fs.existsSync(dir)){
+        fs.mkdirSync(dir);
+    }
     backup(args.firebasePath, args.downloadfolder)
 }
