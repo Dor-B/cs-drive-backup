@@ -5,4 +5,5 @@ node firebase-backup.js
 ECHO UPLOADING TO GITHUB
 git add -A
 git commit -m "Backup default"
+git push origin master
 PAUSE
